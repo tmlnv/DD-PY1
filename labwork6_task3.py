@@ -6,14 +6,8 @@ OUTPUT_FILE = "output.csv"
 # TODO реализовать функцию to_csv_file
 def to_csv_file(filename, headers: List[str], rows: List[List[str]], delimiter: str = ',', new_line: str = '\n'):
     with open(filename, 'w') as file:
-        # h_line = f'{delimiter}'.join(headers)
-        # file.write(h_line)
-        # file.write(new_line)
         file.write(delimiter.join(headers) + new_line)
         for row in rows:
-            # v_line = f'{delimiter}'.join(row)
-            # file.write(v_line)
-            # file.write(new_line)
             file.write(delimiter.join(row) + new_line)
 
 
